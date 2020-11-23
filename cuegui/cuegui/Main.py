@@ -56,6 +56,9 @@ class CueGuiApplication(QtWidgets.QApplication):
     status = QtCore.Signal()
     quit = QtCore.Signal()
 
+    # ETC global signals
+    select_layers = QtCore.Signal(list)
+
     def __init__(self, *args, **kwargs):
         super(CueGuiApplication, self).__init__(*args, **kwargs)
 
